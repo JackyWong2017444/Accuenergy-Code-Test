@@ -1,10 +1,13 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/currentLocation">Current Location</router-link> |
+    <router-link to="/searchLocation">Search Location</router-link>
   </nav>
   <router-view/>
 </template>
+
+
 
 <style>
 #app {
@@ -27,4 +30,11 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ }
+
 </style>
